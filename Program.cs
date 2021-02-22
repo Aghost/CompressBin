@@ -9,10 +9,10 @@ namespace compressbin
 		/*
 
 		BinCompress:
-			44		> 11110000
-			2222 > 11001100
-			0101 > 0101
-			1010 > 1010
+			44  	> 11110000
+			2222	> 11001100
+			0101	> 0101
+			1010	> 1010
 
 		StrCompress
 			aaaaabbbbbbb => ab
@@ -22,6 +22,17 @@ namespace compressbin
 			1111000 => (4 * 1)(3 * 0)
 
 		*/
+		
+		static void Main(string[] args)
+		{
+			foreach (string str in args)
+			{
+				Console.WriteLine(BinCompress(str));
+				//Console.WriteLine(StrCompress(str));
+				//Console.WriteLine($"{DeCompress(str)} ");
+			}
+		}
+
 		
 		static void Main(string[] args)
 		{
