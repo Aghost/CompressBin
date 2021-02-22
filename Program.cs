@@ -33,17 +33,6 @@ namespace compressbin
 			}
 		}
 
-		
-		static void Main(string[] args)
-		{
-			foreach (string str in args)
-			{
-				//Console.WriteLine(BinCompress(str));
-				Console.WriteLine(StrCompress(str));
-				Console.WriteLine($"{DeCompress(str)} ");
-			}
-		}
-
 		static string BinCompress(string str)
 		{
 			StringBuilder sb = new StringBuilder();
